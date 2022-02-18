@@ -1,0 +1,40 @@
+
+
+#btnSearch{
+    display: none !important;
+    
+}
+#titulomisgifos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    padding: 20px;
+
+    #textmisgifos{
+        color: #572EE5;
+        font-size: 25px;
+        font-family: 'Montserrat'; 
+        padding: 20px;
+    }
+    
+}
+#animateCrear{
+    @extend #titulomisgifos;
+    height: 320px;
+
+    #misGifosIcon2{
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+    }
+    #parrafomisgifos{
+        color: #50E3C2; 
+        font-size: 22px;
+        font-family: 'Montserrat'; 
+        font-weight: bold;
+
+
+    }
+   
+}

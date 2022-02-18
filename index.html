@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS index</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</head>
+<body class="modeDark">
+    <header class="modeDark" id="media-noct">         
+        <img class="modeDark" src="assets/images/logo-mobile.svg" alt="logo-gifos">       
+        <nav>
+            <div id="menu">
+                <input type="checkbox"/>
+                <span class="menu-hamburg modeDark"></span>
+                <span class="menu-hamburg modeDark"></span>
+                <span class="menu-hamburg modeDark"></span>     
+                <ul>
+                    <li>
+                        <a class="desplegable modeDark" href="#" id="modo">Modo Nocturno</a><span class="menu-desplegable"></span>                                              
+                        <a class="desplegable modeDark" id="favoritos" href="favoritos.html">Favoritos</a><span class="menu-desplegable"></span>                      
+                        <a class="desplegable modeDark" href="misgifoslink.html">Mis GIFOS</a><span class="menu-desplegable"></span>  
+                        <a class="desplegable modeDark" href="misGifos.html" id="boton-menu"><span class="modeDark" id="horizontal"></span><span class="modeDark" id="vertical"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+        
+    <main id="main">
+        <section id="section-search"> <!--imagen sobre busqueda-->
+            <article>
+                <h1 class="modeDark" id="title">Inspírate, busca, guarda, y crea los mejores <span id="gifos">GIFOS</span></h1>
+                <img  id="ilustra" src="assets/images/ilustra_header.svg" alt="Imagen-ilustracion">
+            </article>
+        </section>
+        <section id="trending"><!-- busqueda + tendencias-->
+            <article> 
+                <div class="modeDark" id="search-box">  <!--llamado a la API-->
+                    
+                    <div id="flex-search"> 
+                      <input type="image" id="btnSearchAutoComplete" src="assets/images/img buscar.png" alt="boton-busqueda">                   
+                      <input type="text" id="textoBusqueda" oninput="resultadoSugerido()" placeholder="Busca GIFOS y más">
+                      <input type="image" id="btnSearch" src="assets/images/icon-search.svg" onclick="limpiarBusqueda();"  alt="boton-limpiar-busqueda">                                       
+                    </div>
+                
+
+                    <div class="autocomplete-content">
+                        <!--Busqueda autocompletada-->
+                    </div>
+
+                </div>             
+                <div id="trendingDinamico">
+                   <h3 class="modeDark">Trending:</h3> 
+                    <!--trending dinamico -->
+                                     
+                </div>               
+                <div id="title-text-busqueda">                   
+                    <!--span y el h2 generado por el valor de la busqueda-->
+                </div>                
+                <div id="contenedor-resultados-busqueda">
+                    <!--resultados de la busqueda-->
+                </div>
+                <div id="btn-ver-mas">
+                    <!--boton ver mas  -->
+                </div>
+                              
+            </article>
+        </section>
+        <section class="modeDark" id="trending-gif"><!--tendencias GIFOS-->
+            <article>
+                <h2 class="modeDark">Trending GIFOS</h2>
+                <p class="modeDark" id="trending-gifos">Mira los últimos <span>GIFOS de nuestra comunidad.</span></p>
+                <div id="flechas">
+                    <div>
+                        <button id="flechaIzq" class="modeDark"><i class="fa fa-angle-left modeDark" aria-hidden="true"></i></button>
+                          
+                    </div>
+                    <div class="content-gifos">                   
+                        <div class="content-title-btnActions"></div> <!--consulta ultimos gifos  -->                    
+                    </div>  
+                    <div>
+                        <button id="flechaDer" class="modeDark"><i class="fa fa-angle-right modeDark" aria-hidden="true"></i></button>
+                       
+                    </div> 
+                </div>
+            </article>
+        </section> 
+      
+    </main>
+    <footer>    
+        <div class="modeDark" id="footer">   
+            <div>
+                <p  class="modeDark" id="text-social-media">Compartir en:</p>              
+                <ul>
+                    <li id="icons">    
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook modeDark" aria-hidden="true"></i></a>           
+                        <a href="https://twitter.com/explore"><i class="fa fa-twitter modeDark" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram modeDark" aria-hidden="true"></i></a>         
+                    </li>        
+                </ul> 
+            </div>     
+            <div>
+                <p class="modeDark" id="copyright"> © GIFOS 2020 All Rights Reserved.</p>
+            </div>            
+        </div>
+    
+    </footer> 
+    <script src="js/script.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/misgifoslink.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,165 @@
+//captura GIF
+
+@media screen and (min-width: 1200px){
+
+    #ContainerCapture{
+        display: flex;
+        margin-top: 10px;       
+        flex-direction: row;        
+        justify-content: center;
+        margin-right: 10%;
+    }
+
+    #divCaptura{
+        border: 1px solid #572EE5;
+        width: 688px;
+        height: 390px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #esquinas{
+            @extend #divCaptura;            
+            border: 3px solid #50E3C2;
+            width: 650px;
+            height: 350px; 
+            margin-top: 3%;           
+           
+            #camara{
+                width: 480px;
+                height: 320px;                
+                margin-top: 2%;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                            
+            }
+            #textContainer{
+                top: 35%;
+                position: absolute;
+                text-align: center;
+                #textCapture{
+                    color: #572EE5;
+                    font-size: 25px;                   
+                    text-align: center;
+                    font-family: 'Montserrat'; 
+                    #text2Capture{
+                        color: #50E3C2;
+                        font-family: 'Montserrat'; 
+                    }
+                }  
+             
+            }
+
+        }
+    }
+    #botones{
+        display: flex;
+        align-items: center;       
+        justify-content: flex-end;
+        margin-right: 5%;
+        #botones2{
+            margin-right: 25%;
+           
+        }  
+        .boton123{
+            width: 30px;
+            height: 30px;
+            color: #572EE5;
+            margin-right: 10px;            
+            border-radius: 50%;
+            border: 1px solid #572ee5;
+            background-color: #fff;
+            font-family: 'Montserrat';
+            &.btnhover{
+                background-color: #572EE5;
+                color: #fff;
+            }
+           
+        }    
+        #pelicula{
+            margin-right: 20px;
+        }
+       
+    }
+    #barra{
+        width: 800px;
+        background-color: #572EE5;
+        padding: 5px;
+        display: inline-block;
+        border-radius: 30px;
+        margin-left: 24%;
+    }
+    .comenzar{
+        margin-left: 50%;
+        width: 100px;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 18px;
+        color: #572EE5;
+        border: 1px solid #572EE5;
+        margin-top: 15px;
+        background-color: #fff;
+        font-family: 'Montserrat';
+    }
+    .grabar{
+        @extend .comenzar;
+    }
+    .finalizar{
+        @extend .comenzar;      
+    }
+    .repetir{
+        @extend .comenzar;
+        border: none;
+        width: auto;
+        top: 520px;
+        margin-left: 70%;
+        position: absolute
+    }
+    .subir{
+        @extend .comenzar;
+        width: auto;
+    }
+    .fondoSubirGifo{
+        background-color: #572EE5;
+        opacity: 0.6;
+        width: 360px;
+        height: 240px;
+        position: absolute;
+        top: 180px;
+        .loader{   
+            left: 50%;          
+            position: absolute;
+            top: 30%;
+        }
+        .textSubiendo{
+            color: #fff;    
+            text-align: center;
+            transform: translateY(95px);          
+        }
+    }
+
+    .hide{
+        display: none !important;
+    }
+    .show{
+        display: block !important;
+    }   
+
+}
+
+.gif-preview-container{
+    margin-top: 55px;
+}
+
+#counter{
+    position: absolute;
+    top: 500px;
+    right: 300px;
+    color:#572EE5;
+}
+    
+  
+
+
+    

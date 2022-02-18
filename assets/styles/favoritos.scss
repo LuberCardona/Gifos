@@ -1,0 +1,161 @@
+
+
+.favoritosContainer{           
+    height: 100%;      
+    overflow: hidden;            
+    border: 5px solid crimson;
+}
+
+#btnSearch{
+    display: none !important;
+                
+}
+#titulofavoritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    padding: 20px;
+    #textfavoritos{
+        color: #572EE5;
+        font-size: 25px;
+        font-family: 'Montserrat'; 
+        padding: 20px;
+    }
+   
+}
+#guardaPrimerFav{
+    @extend #titulofavoritos;
+    height: 320px;
+   // display: block;
+
+    #favoritosIcon2{
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+    }
+    #parrafoFavoritos{
+        color: #50E3C2; 
+        font-size: 22px;
+        font-family: 'Montserrat'; 
+        font-weight: bold;
+       
+    }
+   
+}
+
+#mostrarFavoritos{
+
+    width: 97%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 243px 243px 243px 243px;
+    padding: 10px;
+    grid-gap: 20px 40px;
+
+
+
+   
+}
+       
+
+
+
+.classDescarga{
+    border: 5px solid hotpink;
+
+}
+
+
+#diviconscardFavMO{
+    border: 1px solid red;
+width: 300px;
+height: 280px;
+background: aqua;
+opacity: 0.4;
+position: absolute;
+
+}
+
+
+
+.contenedor-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-flow: row;
+    width: 260px;
+    height: 200px;
+    background-color: #572EE5;
+
+    .classImgFav{
+        width: 260px;
+        height: 200px;
+        position: relative;
+       
+    }
+    
+   
+}
+
+.favoritoHover{
+    background: url(/assets/images/icon-fav-active.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    background-position-x:50% ;
+    background-position-y:50% ;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 100px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.favoritoHoverDescarga{
+    background: url(/assets/images/icon-download.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-position-x:50% ;
+    background-position-y:50% ;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 55px;
+    margin-top: 5px;
+    position: absolute;
+  
+}
+
+.favoritoHoverAmpliar{
+    background: url(/assets/images/icon-max.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-position-x:50% ;
+    background-position-y:50% ;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: absolute;
+  
+}
+ 
+
+.bgFavCorazon{
+    background-color: rgb(203, 192, 236);
+    
+}
+
+.bgFavCorazonMO{
+    background-color: #FFF;
+   
+}
+
+.bgFavCapa{
+    mix-blend-mode: normal;
+    opacity: 0.4;
+}
+ 

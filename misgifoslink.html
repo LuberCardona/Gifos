@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS GIFOS</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body class="modeDark">
+    <header class="modeDark" id="media-noct">    
+        <a href="index.html"><img class="modeDark" src="assets/images/logo-mobile.svg" alt="logo-gifos"> </a>    
+              
+        <nav>
+            <div id="menu">
+                <input type="checkbox"/>
+                <span class="menu-hamburg modeDark"></span>
+                <span class="menu-hamburg modeDark"></span>
+                <span class="menu-hamburg modeDark"></span>     
+                <ul>
+                    <li>
+                        <a class="desplegable modeDark" href="#" id="modo">Modo Nocturno</a><span class="menu-desplegable"></span>                                              
+                        <a class="desplegable modeDark" id="favoritos" href="favoritos.html">Favoritos</a><span class="menu-desplegable"></span>                      
+                        <a class="desplegable modeDark" href="#">Mis GIFOS</a><span class="menu-desplegable"></span>  
+                        <a class="desplegable modeDark" href="misGifos.html" id="boton-menu"><span class="modeDark" id="horizontal"></span><span class="modeDark" id="vertical"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+           
+    <main id="main">
+        <div class="my-gifos" id="titulomisgifos">
+            <img id="misGifosIcon" src="assets/images/icon-mis-gifos.svg" alt="mis-gifos-icon">
+            <div class="title-section" id="textmisgifos">Mis GIFOS</div>
+            <div id="mygifos"></div> <!--code here-->
+        </div>
+
+        <div id="animateCrear">
+            <img id="misGifosIcon2" src="assets/images/icon-mis-gifos.svg" alt="mis-gifos-icon">
+            <p id="parrafomisgifos">¡Anímate a crear tu primer GIFO!</p>
+        </div> 
+
+        <section id="trending"><!-- busqueda + tendencias-->
+            <article> 
+                <div class="modeDark" id="box-gifoslink-fav">  <!--llamado a la API-->
+                    
+                      <input type="image" id="btnSearchAutoComplete" src="assets/images/img buscar.png" alt="boton-busqueda">                   
+                      <input type="text" id="textoBusqueda" oninput="resultadoSugerido()">
+                   
+            </article>
+        </section>  
+        <section class="modeDark" id="trending-gif">
+            <article>
+                <h2 class="modeDark">Trending GIFOS</h2>
+                <p class="modeDark" id="trending-gifos">Mira los últimos <span>GIFOS de nuestra comunidad.</span></p>
+                <div id="flechas">
+                    <div>
+                        <button id="flechaIzq" class="modeDark"><i class="fa fa-angle-left modeDark" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="content-gifos">                   
+                        <div class="content-title-btnActions"></div>                     
+                    </div>  
+                    <div>
+                        <button id="flechaDer" class="modeDark"><i class="fa fa-angle-right modeDark" aria-hidden="true"></i></button>
+                    </div> 
+                </div>
+            </article>
+        </section>      
+    </main>
+    <footer>    
+        <div class="modeDark" id="footer">   
+            <div>
+                <p  class="modeDark" id="text-social-media">Compartir en:</p>              
+                <ul>
+                    <li id="icons">    
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook modeDark" aria-hidden="true"></i></a>           
+                        <a href="https://twitter.com/explore"><i class="fa fa-twitter modeDark" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram modeDark" aria-hidden="true"></i></a>         
+                    </li>        
+                </ul> 
+            </div>     
+            <div>
+                <p class="modeDark" id="copyright"> © GIFOS 2020 All Rights Reserved.</p>
+            </div>            
+        </div>
+    
+    </footer>    
+    <script src="js/script.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/misgifoslink.js"></script>
+</body>
+</html>
+
+        

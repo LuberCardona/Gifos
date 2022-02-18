@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.6/RecordRTC.js"></script>
+    
+</head>
+<body class="modeDark">
+    <header class="modeDark" id="media-noct">   
+        <a href="index.html"><img class="modeDark" src="assets/images/logo-mobile.svg" alt="logo-gifos"></a>            
+           
+        <nav>
+            <div id="menu">
+                <input type="checkbox"/>
+                <span class="menu-hamburg modeDark"></span>
+                <span class="menu-hamburg modeDark"></span>
+                <span class="menu-hamburg modeDark"></span>     
+                <ul>
+                    <li>
+                        <a class="desplegable modeDark" href="#" id="modo">Modo Nocturno</a><span class="menu-desplegable"></span>                                              
+                        <a class="desplegable modeDark" id="favoritos" href="favoritos.html">Favoritos</a><span class="menu-desplegable"></span>                      
+                        <a class="desplegable modeDark" href="misgifoslink.html">Mis GIFOS</a><span class="menu-desplegable"></span>  
+                        <a class="desplegable modeDark" href="#" id="boton-menu"><span class="modeDark" id="horizontal"></span><span class="modeDark" id="vertical"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+   <main>
+        <div id="ContainerCapture">
+
+           <!--<input class="favoritos" id="descargaGifCreado"  type="image" src="assets/images/icon-download.svg">-->
+
+            <div></div>
+            <img src="assets/images/camara.svg" alt="img-camara">
+            <img src="assets/images/element-luz-camara.svg" alt="luz-camara">
+            <div id="divCaptura">
+                <div id="esquinas">                 
+                    <video src="" id="camara" autoplay playsinline></video> 
+                    <div class="gif-preview-container"><img id="gif-preview" alt=""></div>    <!--andres-->               
+                    <div id="textContainer">
+                        <h2 id="textCapture">Aquí podrás crear tus propios <span id="text2Capture">GIFOS</span></h2>
+                        <br>
+                        <P id="parrafo1Capture">¡Crea tu GIFO en sólo 3 pasos!</P>
+                        <p id="parrafo2Capture">(sólo necesitas una camara para grabar un video)</p>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+        <div id="botones">
+            <div id="botones2">
+                <button class="boton123">1</button>
+                <button class="boton123">2</button>
+                <button class="boton123">3</button>
+            </div>            
+            <div id="pelicula">
+                <img src="assets/images/pelicula.svg" alt="img-pelicula">
+               
+            </div>            
+        </div>
+        <div id="barra"></div>
+        <div id="bnt-comenzar-grabar">
+            <button class="comenzar" >COMENZAR</button>
+            <button class="grabar hide" onclick="start()">GRABAR</button> 
+            <button class="finalizar hide" onclick="stopRecording()">FINALIZAR</button>
+            <button class="repetir hide" onclick="location.href='misGifos.html'">REPETIR CAPTURA</button>
+            <button class="subir hide" id="upload" onclick="ocultarBtnSubirYrepetirCaptura();">SUBIR GIFO</button>
+            <h4 id="counter">00:00:00</h4>          
+
+        </div>      
+      
+    </main>
+    <footer>    
+        <div class="modeDark" id="footer">   
+            <div>
+                <p  class="modeDark" id="text-social-media">Compartir en:</p>              
+                <ul>
+                    <li id="icons">    
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook modeDark" aria-hidden="true"></i></a>           
+                        <a href="https://twitter.com/explore"><i class="fa fa-twitter modeDark" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram modeDark" aria-hidden="true"></i></a>         
+                    </li>        
+                </ul> 
+            </div>     
+            <div>
+                <p class="modeDark" id="copyright"> © GIFOS 2020 All Rights Reserved.</p>
+            </div>            
+        </div>    
+    </footer>  
+    <script src="js/script.js"></script>
+    <script src="js/video.js"></script>
+   <!-- <script src="js/favoritos.js"></script>-->
+    <script src="js/misgifoslink.js"></script> 
+</body>
+</html>

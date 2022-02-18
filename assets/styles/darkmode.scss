@@ -1,0 +1,191 @@
+
+body.modeDarkGeneral{
+    background-color: #37383C;
+
+    .dark{
+        background-color: #000;     
+    }
+    
+    .capitalize{
+        text-transform: capitalize;
+    }
+    
+
+    header.modeDarkGeneral{
+        border-top: 5px solid #000;  
+        nav{
+            #menu{
+                .menu-hamburg{
+                    &.modeDarkGeneral{
+                        background-color: #fff;
+                    }
+
+                }
+                ul{
+                    li{
+                        a{
+                          &.modeDarkGeneral{
+                           color: #fff;
+                          }
+                        }
+
+                        .desplegable{
+                            &:active.modeDarkGeneral{
+                                color: #9CAFC3;
+                            } 
+                        }
+                        
+                        
+                        #boton-menu{
+                            &.modeDarkGeneral{
+                                background-color: #37383C;
+                                border: 1px solid #fff;
+                            }
+                            #horizontal{
+                                &.modeDarkGeneral{                                  
+                                    background-color: #fff;
+                                    left: 85%;                                 
+                                }                                 
+                            }
+                            #vertical{
+                                &.modeDarkGeneral{                                  
+                                    background-color: #fff;
+                                    left: 85%;                                 
+                                }                                 
+                            }
+                            &:hover.modeDarkGeneral{
+                                background-color: #fff;
+                                #horizontal{
+                                    background-color: #000;
+                                }
+                                #vertical{
+                                    background-color: #000;
+                                }
+                            }
+                            &:active.modeDarkGeneral{
+                                background-color: #9CAFC3;
+                                border: 1px solid #9CAFC3;                                
+                                #horizontal{                                
+                                   background-color: #fff;                                
+                                }
+                                #vertical{                           
+                                    background-color: #fff;
+                                }
+                                   
+                            }                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{                        
+       #trending{
+            article{
+                #search-box{
+                   &.modeDarkGeneral{
+                       border: 1px solid #fff; 
+                   }
+                }
+                h3{
+                  &.modeDarkGeneral{                   
+                        color: #fff; 
+                    }                  
+                }
+                .info-dinamica{
+                    &.modeDarkGeneral{
+                        color: #fff; 
+                    }
+
+                }
+                #title-text-busqueda{
+                    .hDostextobuscado{
+                        &.modeDarkGeneral{                            
+                            color: #fff; 
+                        }
+                    }
+
+                }
+                .verMas{
+                    &.modeDarkGeneral{
+                        border: 1px solid #fff;
+                        color: #fff; 
+                    }
+                    
+                }
+                
+                
+            }
+        }
+        #trending-gif{   
+            article{
+                #trending-gifos{
+                    &.modeDarkGeneral{
+                        color: #fff;
+                    }
+                }
+                #flechas{
+                    #flechaIzq{
+                        &.modeDarkGeneral{
+                            background-color: #37383C;
+                            color: #fff;
+                            border: 1px solid #fff;
+                            &:hover{
+                                background-color: #fff;
+                                color: #000;
+                            }
+                        }
+                    }
+
+                }
+            } 
+
+        }
+        #section-search{
+            article{                      
+                h1{
+                  &.modeDarkGeneral{
+                  color: #fff; 
+
+                    }
+                }
+
+                
+            }
+
+        } 
+
+        #trending-gif{
+            &.modeDarkGeneral{
+                background-color: #222326;
+            }
+            article{
+                h2{
+                  &.modeDarkGeneral{
+                    color: #fff;
+                  }
+                }                      
+            }
+        }
+    }    
+    footer{
+        #footer{
+            &.modeDarkGeneral{
+                border-bottom: 5px solid #000; 
+            }
+            #text-social-media{
+                &.modeDarkGeneral{
+                    color: #fff; 
+                }
+            }
+            #copyright{
+                &.modeDarkGeneral{
+                    color: #fff;
+                }
+
+            }           
+           
+        }       
+       
+    } 
+}

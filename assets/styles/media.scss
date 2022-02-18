@@ -1,0 +1,333 @@
+
+
+//tablet
+
+@media screen and (min-width: 768px){
+    body{    
+        header{
+           background-color: rgba(255,255,255,0.50);
+           height: 90px ;
+           padding: 10px 20px 10px 20px;  
+           &.modeDarkGeneral{
+            background-color: #37383C;
+           }                
+          
+            img{
+                height: 59.1px;
+                width: 59.1px;
+            }
+            nav{
+                #menu{
+                    input{
+                        display: none;
+                    }
+                    .menu-hamburg{
+                        display: none;
+                
+                    }
+                    ul{              
+                        position: relative;
+                        margin-top: 0;   
+                        background-color: unset;       
+                        background-color: rgba(255,255,255,0.50);
+                        height: 70px;
+                        display: flex;                      
+
+                        li{
+                            margin-top: 0;
+                            background-color: rgba(255,255,255,0.50);
+                            &.dark{
+                                background-color: #37383C;                                 
+                            }
+                            .desplegable{
+                                font-size: 13px;
+                                color: #572EE5;
+                                letter-spacing: 0;
+                                text-align: center;
+                                margin-right: 15px;
+                                text-transform: uppercase;   
+                                &.colorTextTitle{
+                                    color: #fff;
+                                }                          
+                            }
+                            .menu-desplegable{
+                                display: none;
+                            }                            
+                            #boton-menu{
+                                width: 54px;
+                                height: 54px;
+                                border-radius: 50%;
+                                border: 1px solid #572EE5;
+                                background-color: #fff;
+                                margin-top: 8px;
+                                margin-right: 20px;
+                                                              
+                                #horizontal{
+                                    display: unset;
+                                    width: 16px;
+                                    height: 2px;
+                                    background-color: #572EE5;
+                                    position: absolute;
+                                    left: 86%;
+                                    top: 7%; 
+                                } 
+                                #vertical{
+                                    display: unset;
+                                    width: 16px;
+                                    height: 2px;
+                                    background-color: #572EE5;
+                                    position: absolute;
+                                    left: 86%;
+                                    top: 7%;                                   
+                                    transform: rotateZ(90deg);                               
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            #section-search{
+                h1{  
+                    padding: 0 160px 0 160px;
+                }
+               
+            }
+            #trending{
+                article{ 
+                    #search-box{                
+                      width: 551px; 
+                    }                
+                    li{
+                       width: unset;
+                    }
+                    #contenedor-resultados-busqueda{//revisar
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        grid-gap: 20px;
+                        .img-gif-busqueda{
+                            width: 260px;
+                            height: 200px;
+
+                        }
+                    }
+                    
+                }
+            }
+
+            
+            #trending-gif{
+                article{
+                    #trending-gifos{
+                      display: block;                      
+                      width: 100%;
+                    }
+                  
+                    .content-gifos .content-title-btnActions{ 
+                         height: 275px;
+                         overflow: hidden;
+                    } 
+
+                }
+            }             
+        }
+        footer{         
+            #footer{ 
+                display: grid;    
+                grid-template: 1fr / 1fr 1fr;
+                justify-items: center;
+                height: 116px;
+                div{
+                    display: inline-flex;
+                }
+                #text-social-media{              
+                    margin-top: 10px;
+                }
+                ul{
+                    margin-top: 10px;
+                    padding-left: 20px;
+                } 
+            }
+        }
+    }
+}
+.borderSearchBox{
+    border:unset;
+}
+ //desktop
+@media screen and (min-width: 1200px){
+    #menu{
+        ul{
+            li{
+                .desplegable{  
+                                
+                    &:hover{
+                        text-decoration-line: underline;
+                        text-decoration-color: #5ED7C6;
+                    }
+                    &:active{                        
+                        color: #9CAFC3;
+                        text-decoration-line: none;
+                    } 
+                }              
+                #boton-menu{                               
+                    &:hover{
+                        background-color: #572EE5;
+                                              
+                        #horizontal{
+                            background-color: #fff;
+                        }
+                        #vertical{
+                            background-color: #fff;
+                        }
+                    }
+                    &:active{
+                        background-color: #9CAFC3;
+                        border: 1px solid #9CAFC3;              
+                    }
+                }
+            }
+        }
+    }
+    main{
+        #section-search{
+            article{
+                #title{
+                    padding: 0px 300px 0 300px;
+                    font-size: 35px;
+                    line-height: 50px;
+                }
+                #gifos{
+                    font-size: 35px;                    
+                }
+                
+                #ilustra{
+                    height: 190px;
+                }
+            }            
+        }
+        #trending{
+            article{               
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                           
+                .diviconscard{                     
+                    align-items: flex-start;
+                   // background-color: #572EE5;
+                   // opacity: 0.6;
+                    position: absolute;
+                    top: 0px;
+                    width: 261px;
+                    height: 200px;
+                    z-index: 5;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;                              
+                   
+                    .favoritos{                        
+                        background-color: #fff;
+                        margin-right: 10px;
+                        border-radius: 5px;
+                        padding: 10px;
+                        width: 40px;
+                        height: 40px;  
+                        margin: 5px 10px 0 0;                    
+                    }  
+                }
+
+                #verMas{
+                    &:hover{
+                        background-color: #572EE5;
+                        color: #fff;
+                    } 
+                }
+            }
+        }
+        #trending-gif{
+            article{
+                h2{
+                   font-size: 25px;
+                }
+                #trending-gifos {
+                    font-size: 18px;
+                }                
+              
+            }
+        }     
+    }
+  
+    #footer{
+       
+        .fa{
+            &:hover{
+                color:#572EE5;
+            }
+            &:hover.modeDarkGeneral{
+                color: #fff;
+            }
+
+        }
+        #text-social-media{
+            font-size: 13px;            
+        }        
+        #copyright{
+                font-size: 13px;               
+        }        
+    }
+}
+
+.borderSearchBox{
+    border:unset;
+}
+
+@media screen and (min-width: 1400px){
+    main{
+        #section-search{
+            article{
+                #title{
+                    padding: 0px 420px 0 420px;
+                }
+                #search-box{
+                    margin-left: 30%;        
+                }
+            }
+        }
+
+        .img-full{
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: 5%;
+                    width: 730px;
+                    height: 385px;
+                   // border: 5px solid red;
+        
+                }
+        .favoritosF{
+            top: 470PX;
+        }
+        .favoritosFd{
+            top: 470PX;
+        }  
+        .favoritosFx{
+            top: 12px;
+            margin-left: 80%;
+        }      
+       
+    }
+  
+}
+.borderSearchBox{
+    border:unset;
+}
+
+
+
+
+
+                            
+                            

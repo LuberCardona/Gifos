@@ -1,0 +1,128 @@
+body.modeDarkGeneral {
+  background-color: #37383C;
+}
+
+body.modeDarkGeneral .dark {
+  background-color: #000;
+}
+
+body.modeDarkGeneral .capitalize {
+  text-transform: capitalize;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral {
+  border-top: 5px solid #000;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu .menu-hamburg.modeDarkGeneral {
+  background-color: #fff;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li a.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li .desplegable:active.modeDarkGeneral {
+  color: #9CAFC3;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu.modeDarkGeneral {
+  background-color: #37383C;
+  border: 1px solid #fff;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu #horizontal.modeDarkGeneral {
+  background-color: #fff;
+  left: 85%;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu #vertical.modeDarkGeneral {
+  background-color: #fff;
+  left: 85%;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu:hover.modeDarkGeneral {
+  background-color: #fff;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu:hover.modeDarkGeneral #horizontal {
+  background-color: #000;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu:hover.modeDarkGeneral #vertical {
+  background-color: #000;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu:active.modeDarkGeneral {
+  background-color: #9CAFC3;
+  border: 1px solid #9CAFC3;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu:active.modeDarkGeneral #horizontal {
+  background-color: #fff;
+}
+
+body.modeDarkGeneral header.modeDarkGeneral nav #menu ul li #boton-menu:active.modeDarkGeneral #vertical {
+  background-color: #fff;
+}
+
+body.modeDarkGeneral main #trending article #search-box.modeDarkGeneral {
+  border: 1px solid #fff;
+}
+
+body.modeDarkGeneral main #trending article h3.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral main #trending article .info-dinamica.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral main #trending article #title-text-busqueda .hDostextobuscado.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral main #trending article .verMas.modeDarkGeneral {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+body.modeDarkGeneral main #trending-gif article #trending-gifos.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral main #trending-gif article #flechas #flechaIzq.modeDarkGeneral {
+  background-color: #37383C;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+body.modeDarkGeneral main #trending-gif article #flechas #flechaIzq.modeDarkGeneral:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body.modeDarkGeneral main #section-search article h1.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral main #trending-gif.modeDarkGeneral {
+  background-color: #222326;
+}
+
+body.modeDarkGeneral main #trending-gif article h2.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral footer #footer.modeDarkGeneral {
+  border-bottom: 5px solid #000;
+}
+
+body.modeDarkGeneral footer #footer #text-social-media.modeDarkGeneral {
+  color: #fff;
+}
+
+body.modeDarkGeneral footer #footer #copyright.modeDarkGeneral {
+  color: #fff;
+}
+/*# sourceMappingURL=darkmode.css.map */
